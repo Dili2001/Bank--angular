@@ -9,13 +9,16 @@
 
         <div>
             <!-- acno -->
-            <input (change)="acnoChange($event)" class="form-control m-2" type="text" [placeholder]="accPlaceholder">
+            <!-- (change)="acnoChange($event)" -->
+            <input #acno class="form-control m-2" type="text" [placeholder]="accPlaceholder">
         </div>
         <div>
-            <input (change)="pswdChange($event)" class="form-control m-2" type="password">
+            <!-- pswd -->
+            <!-- (change)="pswdChange($event)" -->
+            <input #pswd  class="form-control m-2" type="password">
         </div>
         <div>
-            <input (click)="login()" class=" btn btn-primary m-2" type="button" value="Log In" id="loginBtn">
+            <input (click)="login(acno,pswd)" class=" btn btn-primary m-2" type="button" value="Log In" id="loginBtn">
         </div>
         <div class="d-flex mt-2">
             <p class="text-white">Not an user?</p>

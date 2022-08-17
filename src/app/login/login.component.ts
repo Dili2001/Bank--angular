@@ -28,18 +28,18 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   // user defined function 
-  acnoChange(event: any) {
-    this.acno = event.target.value
-  }
-  pswdChange(event: any) {
-    this.pswd = event.target.value
-  }
+  // acnoChange(event: any) {
+  //   this.acno = event.target.value
+  // }
+  // pswdChange(event: any) {
+  //   this.pswd = event.target.value
+  // }
 
-  login() {
+  login(a:any,p:any) {
     // fetch acno
-    var acno = this.acno
+    var acno = a.value
     // fetch pswd
-    var pswd = this.pswd
+    var pswd = p.value
     let userDetails = this.database
     if (acno in userDetails) {
       if (pswd == userDetails[acno].password) {
