@@ -1,0 +1,22 @@
+angular -front end technology
+framework-defined functions
+basic commands
+
+1.create a project -ng new project-name
+2.to run angular project -ng seve (--open)
+3.to generate compnent -ng g c compnent-name
+
+basic concepts
+
+1.module - to import libraries Root module- AppModule
+2.Components - to generate ts,html,css Root component- app component
+3.Data binding - sharing data within a component
+  3.1 One way binding - only single directional sharing
+      3.1.1 component(ts file) to view(html file)
+            3.1.1.1 string interpolation -  define variable in ts and use in html file with {{variable-name}}
+            3.1.1.2 property binding - define class property(variable) in ts file and use in attribute of tag of html file as [tag-attribute]='propery-name'
+      3.1.2 view to component 
+             3.1.2.1 Event binding - (event-name)="function-call"
+             3.1.2.2 Event binding usin $event - (event-name)="function-call($event)"
+
+
